@@ -89,6 +89,8 @@ nav > header > p > #code {
 .box-sub {
     margin-top: 10px;
     color: rgb(75, 75, 75);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .courses {
@@ -122,4 +124,107 @@ nav > header > p > #code {
     outline: 3px solid #E95420;
     outline-offset: 3px;
     border: none;
+}
+
+.browser-container {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.836);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.browser-warning {
+    font-family: "Victor Mono";
+    font-weight: bold;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 15px;
+}
+#browser-warning-header {
+    text-align: center;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    margin-top: 0px;
+    line-height: 60px;
+}
+#browser-warning-text {
+    font-weight: normal;
+    padding: 10px;
+}
+#browser-warning-continue {
+    transition: .3s ease;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    height: 50px;
+    width: 120px;
+    font-size: 18px;
+    font-family: "Victor Mono";
+    background-color: #e6764d;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+#browser-warning-continue:hover {
+    transition: .3s ease;
+    background-color: #E95420;
+}
+
+.start {
+    background: rgb(199, 199, 199);
+    outline: none;
+    border: none;
+    color: white;
+}
+.start:hover {
+    /* transition: .3s ease; */
+    background: rgb(199, 199, 199);
+    /* color: white; */
+    /* outline: 3px solid #E95420; */
+    /* outline-offset: 3px; */
+    outline: none;
+    border: none;
+}
+
+#html-basic-start {
+    aspect-ratio: 1 / 1;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    color: #E95420;
+    background-color: transparent;
+    border: 3px solid #E95420;
+    cursor: pointer;
+    outline: 0px solid transparent;
+}
+#html-basic-start:hover {
+    transition: .3s ease;
+    background: #E95420;
+    color: white;
+    outline: 3px solid #E95420;
+    outline-offset: 3px;
+    border: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        /* overflow-x: hidden; */
+    }
+    .box {
+        width: 100%;
+        border-radius: none;
+        border: none;
+        border: 2px solid rgb(219, 219, 219);
+    }
+    .courses {
+        width: 100%;
+        border: 1px solid red;
+    }
 }

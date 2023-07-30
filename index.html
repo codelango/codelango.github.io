@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeLango: Learn Front-End Web Development for Free!</title>
-    <link rel="icon" href="./assets/Group 6.png">
+    <link rel="icon" href="./Group 6.png">
 
     <link rel="stylesheet" href="index.css">
 </head>
@@ -21,16 +21,27 @@
     </nav>
 
     <div class="courses">
+        <div class="box" id="python-basic">
+            <div class="box-text">
+                <p class="box-title">Python Basics</p>
+                <sub class="box-sub">Learn Python syntax and some cool tricks!</sub>
+            </div>
+            <button id="python-basic-start" class="start">
+                <!-- onclick="window.open('python/python-basic/python-basic.html')" -->
+                <i class="fa-solid fa-play"></i>
+            </button>
+        </div>
         <div class="box" id="html-basic">
             <div class="box-text">
                 <p class="box-title">HTML Basics</p>
                 <sub class="box-sub">Learn the basics of html and the structure of a web page.</sub>
             </div>
-            <button id="html-basic-start" class="start" onclick="window.open('html/html-basic.html')">
+            <button id="html-basic-start" class="start" onclick="window.open('html/html-basic/html-basic.html')">
                 <i class="fa-solid fa-play"></i>
             </button>
         </div>
-        <div class="box" id="html-intermediate" onclick="window.open('html/html-intermediate.html')">
+        <div class="box" id="html-intermediate">
+            <!-- onclick="window.open('html/html-intermediate/html-intermediate.html')" -->
             <div class="box-text">
                 <p class="box-title">Intermediate HTML</p>
                 <sub class="box-sub">Learn more specialized html elements and neat functions!</sub>
@@ -86,6 +97,18 @@
         </div>
     </div>
 
+    <div class="browser-container">
+        <div class="browser-warning">
+            <p id="browser-warning-header">
+                ⚠️Warning⚠️
+            </p>
+            <p id="browser-warning-text">Chrome is the recommended browser for CodeLango.</p>
+            <button id="browser-warning-continue">continue</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     <script defer src="https://kit.fontawesome.com/4931b3c0b5.js" crossorigin="anonymous"></script>
 </body>
 </html>

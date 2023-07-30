@@ -103,6 +103,17 @@ nav > header > p > #code {
     width: max-content;
     padding: 2px 4px;
     border-radius: 3px;
-    background-color:rgb(219, 219, 219);
+    background-color: rgb(219, 219, 219);
     font-family: "Ubuntu";
+}
+.code-wrapper {
+    margin-top: 15px;
+    padding: 1px 20px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    width: calc(100% - 20px);
+}
+code {
+    font-size: 15px;
+    font-family: "Victor Mono";
 }
